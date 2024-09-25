@@ -1,0 +1,2969 @@
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-01031: insufficient privileges
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+Table ARTIST created.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50) FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00907: missing right parenthesis
+00907. 00000 -  "missing right parenthesis"
+*Cause:    
+*Action:
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Table ARTIST_PERSONAL_DATA created.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Error starting at line : 5 in command -
+CREATE TABLE track(id int PRIMARY KEY, track_name VARCHAR(50), artist_id int, album_id int NULL, release_date date, 
+    CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id), 
+    CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id))
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Error starting at line : 5 in command -
+CREATE TABLE track(id int PRIMARY KEY, track_name VARCHAR(50), artist_id int, album_id int NULL, release_date date, 
+CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id), 
+CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id))
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Error starting at line : 5 in command -
+CREATE TABLE track(id int PRIMARY KEY, track_name VARCHAR(50), artist_id int, album_id int NULL, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id), CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id))
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-01031: insufficient privileges
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-01031: insufficient privileges
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Table ALBUM created.
+
+
+Table TRACK created.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, tack_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00904: "TRACK_ID": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Table ALBUM_TRACK created.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ID             NOT NULL NUMBER(38)   
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 11 in command -
+ALTER TABLE artist DROP COLUMN id
+Error report -
+ORA-12992: cannot drop parent key column
+12992. 00000 -  "cannot drop parent key column"
+*Cause:    An attempt was made to drop a parent key column.
+*Action:   Drop all constraints referencing the parent key column, or
+           specify CASCADE CONSTRAINTS in statement.
+
+Table ARTIST_PERSONAL_DATA altered.
+
+
+Error starting at line : 13 in command -
+ALTER TABLE artist ADD id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY
+Error report -
+ORA-01430: column being added already exists in table
+01430. 00000 -  "column being added already exists in table"
+*Cause:    
+*Action:
+
+Table ARTIST_PERSONAL_DATA altered.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+1 row inserted.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 11 in command -
+INSERT INTO artist VALUES(1, 'jay Z')
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008314) violated
+
+
+3 rows inserted.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 11 in command -
+INSERT INTO artist VALUES(1, 'jay Z')
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008314) violated
+
+
+Error starting at line : 13 in command -
+INSERT ALL 
+    INTO artist VALUES (2, 'Rick Ross')
+    INTO artist VALUES (3, 'Roddy Rich')
+    INTO artist VALUES (4, 'Method Man')
+    SELECT * FROM dual
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008314) violated
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+        ID STAGE_NAME                                        
+---------- --------------------------------------------------
+         1 jay Z                                             
+         2 Rick Ross                                         
+         3 Roddy Rich                                        
+         4 Method Man                                        
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+        ID STAGE_NAME                                        
+---------- --------------------------------------------------
+         1 jay Z                                             
+         2 Rick Ross                                         
+         3 Roddy Rich                                        
+         4 Method Man                                        
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+        ID STAGE_NAME                                        
+---------- --------------------------------------------------
+         1 jay Z                                             
+         2 Rick Ross                                         
+         3 Roddy Rich                                        
+         4 Method Man                                        
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 20 in command -
+INSERT INTO artist_personal_data VALUES(1, 2, 'William Leonard Roberts II', 'Clarksdale, Mississippi, U.S', 'January 28, 1976')
+Error at Command Line : 20 Column : 109
+Error report -
+SQL Error: ORA-01722: invalid number
+01722. 00000 -  "invalid number"
+*Cause:    The specified number was invalid.
+*Action:   Specify a valid number.
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 20 in command -
+INSERT INTO artist_personal_data VALUES(1, 2, 'William Leonard Roberts II', 'Clarksdale, Mississippi, U.S', 'January 28, 1976')
+Error at Command Line : 20 Column : 109
+Error report -
+SQL Error: ORA-01722: invalid number
+01722. 00000 -  "invalid number"
+*Cause:    The specified number was invalid.
+*Action:   Specify a valid number.
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 20 in command -
+INSERT INTO artist_personal_data VALUES(2, 1, 'William Leonard Roberts II', 'Clarksdale, Mississippi, U.S', 'January 28, 1976')
+Error at Command Line : 20 Column : 109
+Error report -
+SQL Error: ORA-01722: invalid number
+01722. 00000 -  "invalid number"
+*Cause:    The specified number was invalid.
+*Action:   Specify a valid number.
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+1 row inserted.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 20 in command -
+INSERT INTO artist_personal_data VALUES(2, 'William Leonard Roberts II', 'Clarksdale, Mississippi, U.S', 'January 28, 1976', 1)
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008328) violated
+
+
+ ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+1 row inserted.
+
+
+ ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 20 in command -
+INSERT INTO artist_personal_data VALUES(2, 'William Leonard Roberts II', 'Clarksdale, Mississippi, U.S', 'January 28, 1976', 1)
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008328) violated
+
+
+Error starting at line : 21 in command -
+INSERT INTO artist_personal_data VALUES(1, 'Shawn Corey Carter', 'Brooklyn, New York City, U.S', 'December 4, 1969', 2)
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008328) violated
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+ ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+         3 Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          October 22, 1998                                            3
+         4 Clifford Smith, Jr.                                Long Island, New York, U.S.                        March 2, 1971                                               4
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name       Null?    Type         
+---------- -------- ------------ 
+ID         NOT NULL NUMBER(38)   
+STAGE_NAME          VARCHAR2(50) 
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+TRACK_NAME            VARCHAR2(50) 
+ARTIST_ID             NUMBER(38)   
+RELEASE_DATE          DATE         
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+TRACK_NAME            VARCHAR2(50) 
+ARTIST_ID             NUMBER(38)   
+RELEASE_DATE          DATE         
+
+Error starting at line : 27 in command -
+INSERT INTO track VALUES('Tical', )
+Error at Command Line : 27 Column : 35
+Error report -
+SQL Error: ORA-00936: missing expression
+00936. 00000 -  "missing expression"
+*Cause:    
+*Action:
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+TRACK_NAME            VARCHAR2(50) 
+ARTIST_ID             NUMBER(38)   
+RELEASE_DATE          DATE         
+
+Error starting at line : 27 in command -
+INSERT INTO track VALUES('Tical', 4, TO_DATE('15-11-1994', 'DD-MM-YYYY'))
+Error at Command Line : 27 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+
+Error starting at line : 28 in command -
+INSERT INTO track VALUES('Meth vs. Chef', 4, TO_DATE('15-11-1994', 'DD-MM-YYYY'))
+Error at Command Line : 28 Column : 13
+Error report -
+SQL Error: ORA-00947: not enough values
+00947. 00000 -  "not enough values"
+*Cause:    
+*Action:
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+TRACK_NAME            VARCHAR2(50) 
+ARTIST_ID             NUMBER(38)   
+RELEASE_DATE          DATE         
+
+Error starting at line : 27 in command -
+INSERT INTO track VALUES(NULL, 'Tical', 4, TO_DATE('15-11-1994', 'DD-MM-YYYY'))
+Error at Command Line : 27 Column : 26
+Error report -
+SQL Error: ORA-01400: cannot insert NULL into ("C##TESTING"."TRACK"."ID")
+01400. 00000 -  "cannot insert NULL into (%s)"
+*Cause:    An attempt was made to insert NULL into previously listed objects.
+*Action:   These objects cannot accept NULL values.
+
+Error starting at line : 28 in command -
+INSERT INTO track VALUES(NULL, 'Meth vs. Chef', 4, TO_DATE('15-11-1994', 'DD-MM-YYYY'))
+Error at Command Line : 28 Column : 26
+Error report -
+SQL Error: ORA-01400: cannot insert NULL into ("C##TESTING"."TRACK"."ID")
+01400. 00000 -  "cannot insert NULL into (%s)"
+*Cause:    An attempt was made to insert NULL into previously listed objects.
+*Action:   These objects cannot accept NULL values.
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+TRACK_NAME            VARCHAR2(50) 
+ARTIST_ID             NUMBER(38)   
+RELEASE_DATE          DATE         
+
+Error starting at line : 27 in command -
+INSERT INTO track VALUES('', 'Tical', 4, TO_DATE('15-11-1994', 'DD-MM-YYYY'))
+Error at Command Line : 27 Column : 26
+Error report -
+SQL Error: ORA-01400: cannot insert NULL into ("C##TESTING"."TRACK"."ID")
+01400. 00000 -  "cannot insert NULL into (%s)"
+*Cause:    An attempt was made to insert NULL into previously listed objects.
+*Action:   These objects cannot accept NULL values.
+
+Error starting at line : 28 in command -
+INSERT INTO track VALUES('', 'Meth vs. Chef', 4, TO_DATE('15-11-1994', 'DD-MM-YYYY'))
+Error at Command Line : 28 Column : 26
+Error report -
+SQL Error: ORA-01400: cannot insert NULL into ("C##TESTING"."TRACK"."ID")
+01400. 00000 -  "cannot insert NULL into (%s)"
+*Cause:    An attempt was made to insert NULL into previously listed objects.
+*Action:   These objects cannot accept NULL values.
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+TRACK_NAME            VARCHAR2(50) 
+ARTIST_ID             NUMBER(38)   
+RELEASE_DATE          DATE         
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+TRACK_NAME            VARCHAR2(50) 
+ARTIST_ID             NUMBER(38)   
+RELEASE_DATE          DATE         
+
+Error starting at line : 27 in command -
+INSERT INTO track VALUES(1, 'Tical', 4, TO_DATE('15-11-1994', 'DD-MM-YYYY'))
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008321) violated
+
+
+Error starting at line : 28 in command -
+INSERT INTO track VALUES(2, 'Meth vs. Chef', 4, TO_DATE('15-11-1994', 'DD-MM-YYYY'))
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008321) violated
+
+
+        ID TRACK_NAME                                          ARTIST_ID RELEASE_D
+---------- -------------------------------------------------- ---------- ---------
+         1 Tical                                                       4 15-NOV-94
+         2 Meth vs. Chef                                               4 15-NOV-94
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+TRACK_NAME            VARCHAR2(50) 
+ARTIST_ID             NUMBER(38)   
+RELEASE_DATE          DATE         
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+ERROR:
+ORA-04043: object albums does not exist
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+ARTIST_ID             NUMBER(38)   
+ALBUM_NAME            VARCHAR2(50) 
+COVER                 VARCHAR2(50) 
+RELEASE_DATE          DATE         
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+ARTIST_ID             NUMBER(38)   
+ALBUM_NAME            VARCHAR2(50) 
+COVER                 VARCHAR2(50) 
+RELEASE_DATE          DATE         
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 43 in command -
+INSERT INTO album VALUES(4, 4, 'Tical', 'cover.jpg', TO_DATE('11-15-1994', 'DD-MM-YYYY'))
+Error at Command Line : 43 Column : 62
+Error report -
+SQL Error: ORA-01843: not a valid month
+01843. 00000 -  "not a valid month"
+*Cause:    
+*Action:
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+ARTIST_ID             NUMBER(38)   
+ALBUM_NAME            VARCHAR2(50) 
+COVER                 VARCHAR2(50) 
+RELEASE_DATE          DATE         
+
+Error starting at line : 38 in command -
+INSERT INTO track VALUES(5, 'The Box', 3, TO_DATE('11-1-2019', 'DD-MM-YYYY'))
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008321) violated
+
+
+Error starting at line : 40 in command -
+INSERT INTO album VALUES(1, 1, 'The Blueprint', 'cover.jpg', TO_DATE('11-9-2001', 'DD-MM-YYYY'))
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008318) violated
+
+
+Error starting at line : 41 in command -
+INSERT INTO album VALUES(2, 2, 'Port of miami', 'cover.jpg', TO_DATE('8-8-2006', 'DD-MM-YYYY'))
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008318) violated
+
+
+Error starting at line : 42 in command -
+INSERT INTO album VALUES(3, 3, 'Please excuse me for beign antisocial', 'cover.jpg', TO_DATE('12-6-2019', 'DD-MM-YYYY'))
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008318) violated
+
+
+1 row inserted.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+ARTIST_ID             NUMBER(38)   
+ALBUM_NAME            VARCHAR2(50) 
+COVER                 VARCHAR2(50) 
+RELEASE_DATE          DATE         
+
+        ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4          4 Tical                                              cover.jpg                                          15-NOV-94
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+ARTIST_ID             NUMBER(38)   
+ALBUM_NAME            VARCHAR2(50) 
+COVER                 VARCHAR2(50) 
+RELEASE_DATE          DATE         
+
+Error starting at line : 44 in command -
+SELECT * FROM artiste
+Error at Command Line : 44 Column : 15
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+ ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+         3 Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          October 22, 1998                                            3
+         4 Clifford Smith, Jr.                                Long Island, New York, U.S.                        March 2, 1971                                               4
+
+
+        ID TRACK_NAME                                          ARTIST_ID RELEASE_D
+---------- -------------------------------------------------- ---------- ---------
+         1 Tical                                                       4 15-NOV-94
+         2 Meth vs. Chef                                               4 15-NOV-94
+         3 December 4th                                                1 14-NOV-03
+         4 Takeover                                                    1 11-SEP-01
+         5 The Box                                                     3 11-JAN-19
+
+
+        ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4          4 Tical                                              cover.jpg                                          15-NOV-94
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name         Null?    Type         
+------------ -------- ------------ 
+ID           NOT NULL NUMBER(38)   
+ARTIST_ID             NUMBER(38)   
+ALBUM_NAME            VARCHAR2(50) 
+COVER                 VARCHAR2(50) 
+RELEASE_DATE          DATE         
+
+        ID STAGE_NAME                                        
+---------- --------------------------------------------------
+         1 jay Z                                             
+         2 Rick Ross                                         
+         3 Roddy Rich                                        
+         4 Method Man                                        
+
+
+ ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+         3 Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          October 22, 1998                                            3
+         4 Clifford Smith, Jr.                                Long Island, New York, U.S.                        March 2, 1971                                               4
+
+
+        ID TRACK_NAME                                          ARTIST_ID RELEASE_D
+---------- -------------------------------------------------- ---------- ---------
+         1 Tical                                                       4 15-NOV-94
+         2 Meth vs. Chef                                               4 15-NOV-94
+         3 December 4th                                                1 14-NOV-03
+         4 Takeover                                                    1 11-SEP-01
+         5 The Box                                                     3 11-JAN-19
+
+
+        ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4          4 Tical                                              cover.jpg                                          15-NOV-94
+
+
+ERROR:
+ORA-04043: object albmu_track does not exist
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name     Null?    Type       
+-------- -------- ---------- 
+ID       NOT NULL NUMBER(38) 
+ALBUM_ID          NUMBER(38) 
+TRACK_ID          NUMBER(38) 
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name     Null?    Type       
+-------- -------- ---------- 
+ID       NOT NULL NUMBER(38) 
+ALBUM_ID          NUMBER(38) 
+TRACK_ID          NUMBER(38) 
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 50 in command -
+INSERT INTO album_track VALUES(2, 4, 2)
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008324) violated
+
+
+Error starting at line : 51 in command -
+INSERT INTO album_track VALUES(2, 3, 5)
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008324) violated
+
+
+Error starting at line : 1 in command -
+CREATE TABLE artist(id int PRIMARY KEY, stage_name VARCHAR(50))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 3 in command -
+CREATE TABLE artist_personal_data(id int PRIMARY KEY, artist_id int, names varchar(50), place_of_birth varchar(50), date_of_birth varchar(50), FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name           Null?    Type         
+-------------- -------- ------------ 
+ARTIST_ID               NUMBER(38)   
+NAMES                   VARCHAR2(50) 
+PLACE_OF_BIRTH          VARCHAR2(50) 
+DATE_OF_BIRTH           VARCHAR2(50) 
+ID             NOT NULL NUMBER(38)   
+
+Error starting at line : 5 in command -
+CREATE TABLE album(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, artist_id int, album_name VARCHAR(50), cover VARCHAR(50), release_date DATE, CONSTRAINT album_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+CREATE TABLE track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, track_name VARCHAR(50), artist_id int, release_date date, CONSTRAINT track_artist FOREIGN KEY(artist_id) REFERENCES artist(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 7 in command -
+CREATE TABLE album_track(id int GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, album_id int, track_id int,  CONSTRAINT track_album FOREIGN KEY(album_id) REFERENCES album(id), CONSTRAINT track__album FOREIGN KEY(track_id) REFERENCES track(id))
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+Name     Null?    Type       
+-------- -------- ---------- 
+ID       NOT NULL NUMBER(38) 
+ALBUM_ID          NUMBER(38) 
+TRACK_ID          NUMBER(38) 
+
+Error starting at line : 48 in command -
+INSERT INTO album_track VALUES(1, 1, 3)
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008324) violated
+
+
+Error starting at line : 49 in command -
+INSERT INTO album_track VALUES(2, 4, 1)
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008324) violated
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+        ID STAGE_NAME                                        
+---------- --------------------------------------------------
+         1 jay Z                                             
+         2 Rick Ross                                         
+         3 Roddy Rich                                        
+         4 Method Man                                        
+
+
+ ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+         3 Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          October 22, 1998                                            3
+         4 Clifford Smith, Jr.                                Long Island, New York, U.S.                        March 2, 1971                                               4
+
+
+        ID TRACK_NAME                                          ARTIST_ID RELEASE_D
+---------- -------------------------------------------------- ---------- ---------
+         1 Tical                                                       4 15-NOV-94
+         2 Meth vs. Chef                                               4 15-NOV-94
+         3 December 4th                                                1 14-NOV-03
+         4 Takeover                                                    1 11-SEP-01
+         5 The Box                                                     3 11-JAN-19
+
+
+        ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4          4 Tical                                              cover.jpg                                          15-NOV-94
+
+
+        ID   ALBUM_ID   TRACK_ID
+---------- ---------- ----------
+         1          1          3
+         2          4          1
+         3          4          2
+         4          3          5
+
+
+1 row inserted.
+
+
+Error starting at line : 56 in command -
+INSERT INTO artist_personal_data VALUES(5, 'Aliaune Damala Bouga Time Puru Nacka Lu Lu Lu Badara Akon Thiam', 'Senegalese', 'April 16, 1973', 5)
+Error at Command Line : 56 Column : 44
+Error report -
+SQL Error: ORA-12899: value too large for column "C##TESTING"."ARTIST_PERSONAL_DATA"."NAMES" (actual: 63, maximum: 50)
+12899. 00000 -  "value too large for column %s (actual: %s, maximum: %s)"
+*Cause:    An attempt was made to insert or update a column with a value
+           which is too wide for the width of the destination column.
+           The name of the column is given, along with the actual width
+           of the value, and the maximum allowed width of the column.
+           Note that widths are reported in characters if character length
+           semantics are in effect for the column, otherwise widths are
+           reported in bytes.
+*Action:   Examine the SQL statement for correctness.  Check source
+           and destination column data types.
+           Either make the destination column wider, or use a subset
+           of the source column (i.e. use substring).
+
+0 rows updated.
+
+
+0 rows deleted.
+
+
+        ID STAGE_NAME                                        
+---------- --------------------------------------------------
+         1 jay Z                                             
+         2 Rick Ross                                         
+         3 Roddy Rich                                        
+         4 Method Man                                        
+         5 Akon                                              
+
+
+ ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+         3 Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          October 22, 1998                                            3
+         4 Clifford Smith, Jr.                                Long Island, New York, U.S.                        March 2, 1971                                               4
+
+
+        ID TRACK_NAME                                          ARTIST_ID RELEASE_D
+---------- -------------------------------------------------- ---------- ---------
+         1 Tical                                                       4 15-NOV-94
+         2 Meth vs. Chef                                               4 15-NOV-94
+         3 December 4th                                                1 14-NOV-03
+         4 Takeover                                                    1 11-SEP-01
+         5 The Box                                                     3 11-JAN-19
+
+
+        ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4          4 Tical                                              cover.jpg                                          15-NOV-94
+
+
+        ID   ALBUM_ID   TRACK_ID
+---------- ---------- ----------
+         1          1          3
+         2          4          1
+         3          4          2
+         4          3          5
+
+
+Error starting at line : 55 in command -
+INSERT INTO artist VALUES (5, 'Akon')
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008314) violated
+
+
+Error starting at line : 56 in command -
+INSERT INTO artist_personal_data VALUES(5, 'Aliaune Damala Bouga Time Puru Nacka Lu Lu Lu Badara Akon Thiam', 'Senegalese', 'April 16, 1973', 5)
+Error at Command Line : 56 Column : 44
+Error report -
+SQL Error: ORA-12899: value too large for column "C##TESTING"."ARTIST_PERSONAL_DATA"."NAMES" (actual: 63, maximum: 50)
+12899. 00000 -  "value too large for column %s (actual: %s, maximum: %s)"
+*Cause:    An attempt was made to insert or update a column with a value
+           which is too wide for the width of the destination column.
+           The name of the column is given, along with the actual width
+           of the value, and the maximum allowed width of the column.
+           Note that widths are reported in characters if character length
+           semantics are in effect for the column, otherwise widths are
+           reported in bytes.
+*Action:   Examine the SQL statement for correctness.  Check source
+           and destination column data types.
+           Either make the destination column wider, or use a subset
+           of the source column (i.e. use substring).
+
+0 rows updated.
+
+
+0 rows deleted.
+
+
+Error starting at line : 55 in command -
+INSERT INTO artist VALUES (5, 'Akon')
+Error report -
+ORA-00001: unique constraint (C##TESTING.SYS_C008314) violated
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row deleted.
+
+
+        ID STAGE_NAME                                          ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- ---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         1 jay Z                                                       1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+         2 Rick Ross                                                   2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         3 Roddy Rich                                                  3 Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          October 22, 1998                                            3
+         4 Method Man                                                  4 Clifford Smith, Jr.                                Long Island, New York, U.S.                        March 2, 1971                                               4
+
+
+Error starting at line : 75 in command -
+SELECT * FROM artist LEFT JOIN album
+Error at Command Line : 75 Column : 36
+Error report -
+SQL Error: ORA-00905: missing keyword
+00905. 00000 -  "missing keyword"
+*Cause:    
+*Action:
+
+        ID STAGE_NAME                                                 ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- -------------------------------------------------- ---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1 jay Z                                                       1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2 Rick Ross                                                   2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3 Roddy Rich                                                  3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4 Method Man                                                  4          4 Tical                                              cover.jpg                                          15-NOV-94
+         5 Akon                                                                                                                                                                                    
+
+
+        ID STAGE_NAME                                                 ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- -------------------------------------------------- ---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1 jay Z                                                       1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2 Rick Ross                                                   2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3 Roddy Rich                                                  3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4 Method Man                                                  4          4 Tical                                              cover.jpg                                          15-NOV-94
+
+
+Error starting at line : 78 in command -
+SELECT * FROM artist RIGHT JOIN track ON  artist.id = album.artist_id
+Error at Command Line : 78 Column : 55
+Error report -
+SQL Error: ORA-00904: "ALBUM"."ARTIST_ID": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+
+Error starting at line : 78 in command -
+SELECT * FROM artist RIGHT JOIN track ON  artist.id = truck.artist_id
+Error at Command Line : 78 Column : 55
+Error report -
+SQL Error: ORA-00904: "TRUCK"."ARTIST_ID": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+
+        ID STAGE_NAME                                                 ID TRACK_NAME                                          ARTIST_ID RELEASE_D
+---------- -------------------------------------------------- ---------- -------------------------------------------------- ---------- ---------
+         1 jay Z                                                       3 December 4th                                                1 14-NOV-03
+         1 jay Z                                                       4 Takeover                                                    1 11-SEP-01
+         3 Roddy Rich                                                  5 The Box                                                     3 11-JAN-19
+         4 Method Man                                                  1 Tical                                                       4 15-NOV-94
+         4 Method Man                                                  2 Meth vs. Chef                                               4 15-NOV-94
+
+
+        ID STAGE_NAME                                                 ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- -------------------------------------------------- ---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1 jay Z                                                       1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2 Rick Ross                                                   2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3 Roddy Rich                                                  3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4 Method Man                                                  4          4 Tical                                              cover.jpg                                          15-NOV-94
+
+
+        ID STAGE_NAME                                                 ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D
+---------- -------------------------------------------------- ---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------
+         1 jay Z                                                       1          1 The Blueprint                                      cover.jpg                                          11-SEP-01
+         2 Rick Ross                                                   2          2 Port of miami                                      cover.jpg                                          08-AUG-06
+         3 Roddy Rich                                                  3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19
+         4 Method Man                                                  4          4 Tical                                              cover.jpg                                          15-NOV-94
+
+
+        ID STAGE_NAME                                                 ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D  ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- ---------- ---------- -------------------------------------------------- -------------------------------------------------- --------- ---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 Rick Ross                                                   2          2 Port of miami                                      cover.jpg                                          08-AUG-06          2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         1 jay Z                                                       1          1 The Blueprint                                      cover.jpg                                          11-SEP-01          1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+         3 Roddy Rich                                                  3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19          3 Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          October 22, 1998                                            3
+         4 Method Man                                                  4          4 Tical                                              cover.jpg                                          15-NOV-94          4 Clifford Smith, Jr.                                Long Island, New York, U.S.                        March 2, 1971                                               4
+
+
+        ID STAGE_NAME                                                 ID  ARTIST_ID ALBUM_NAME                                         COVER                                              RELEASE_D  ARTIST_ID NAMES                                              PLACE_OF_BIRTH                                     DATE_OF_BIRTH                                              ID
+---------- -------------------------------------------------- ---------- ---------- -------------------------------------------------- -------------------------------------------------- --------- ---------- -------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ----------
+         2 Rick Ross                                                   2          2 Port of miami                                      cover.jpg                                          08-AUG-06          2 William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       January 28, 1976                                            1
+         1 jay Z                                                       1          1 The Blueprint                                      cover.jpg                                          11-SEP-01          1 Shawn Corey Carter                                 Brooklyn, New York City, U.S                       December 4, 1969                                            2
+         3 Roddy Rich                                                  3          3 Please excuse me for beign antisocial              cover.jpg                                          12-JUN-19          3 Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          October 22, 1998                                            3
+         4 Method Man                                                  4          4 Tical                                              cover.jpg                                          15-NOV-94          4 Clifford Smith, Jr.                                Long Island, New York, U.S.                        March 2, 1971                                               4
+
+
+NAMES                                              PLACE_OF_BIRTH                                    
+-------------------------------------------------- --------------------------------------------------
+William Leonard Roberts II                         Clarksdale, Mississippi, U.S                      
+Shawn Corey Carter                                 Brooklyn, New York City, U.S                      
+Rodrick Wayne Moore Jr.                            Compton, California, U.S.                         
+Clifford Smith, Jr.                                Long Island, New York, U.S.                       
+
+
+Error starting at line : 85 in command -
+SELECT artist_personal_data.names, artist_personal_data.place_of_birth, artist.stage_name,  from artist_personal_data, artist
+Error at Command Line : 85 Column : 93
+Error report -
+SQL Error: ORA-00936: missing expression
+00936. 00000 -  "missing expression"
+*Cause:    
+*Action:
+
+NAMES                                              PLACE_OF_BIRTH                                     STAGE_NAME                                        
+-------------------------------------------------- -------------------------------------------------- --------------------------------------------------
+William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       jay Z                                             
+William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       Rick Ross                                         
+William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       Roddy Rich                                        
+William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       Method Man                                        
+William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       Akon                                              
+Shawn Corey Carter                                 Brooklyn, New York City, U.S                       jay Z                                             
+Shawn Corey Carter                                 Brooklyn, New York City, U.S                       Rick Ross                                         
+Shawn Corey Carter                                 Brooklyn, New York City, U.S                       Roddy Rich                                        
+Shawn Corey Carter                                 Brooklyn, New York City, U.S                       Method Man                                        
+Shawn Corey Carter                                 Brooklyn, New York City, U.S                       Akon                                              
+Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          jay Z                                             
+
+NAMES                                              PLACE_OF_BIRTH                                     STAGE_NAME                                        
+-------------------------------------------------- -------------------------------------------------- --------------------------------------------------
+Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          Rick Ross                                         
+Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          Roddy Rich                                        
+Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          Method Man                                        
+Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          Akon                                              
+Clifford Smith, Jr.                                Long Island, New York, U.S.                        jay Z                                             
+Clifford Smith, Jr.                                Long Island, New York, U.S.                        Rick Ross                                         
+Clifford Smith, Jr.                                Long Island, New York, U.S.                        Roddy Rich                                        
+Clifford Smith, Jr.                                Long Island, New York, U.S.                        Method Man                                        
+Clifford Smith, Jr.                                Long Island, New York, U.S.                        Akon                                              
+
+20 rows selected. 
+
+
+Error starting at line : 86 in command -
+SELECT count(SELECT * FROM album_truck WHERE album_id = 4)
+Error at Command Line : 86 Column : 14
+Error report -
+SQL Error: ORA-00936: missing expression
+00936. 00000 -  "missing expression"
+*Cause:    
+*Action:
+
+Error starting at line : 86 in command -
+SELECT COUNT FROM album_track WHERE album_id = 4
+Error at Command Line : 86 Column : 8
+Error report -
+SQL Error: ORA-00904: "COUNT": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+
+ COUNT(ID)
+----------
+         2
+
+
+NAMES                                              PLACE_OF_BIRTH                                     STAGE_NAME                                        
+-------------------------------------------------- -------------------------------------------------- --------------------------------------------------
+Shawn Corey Carter                                 Brooklyn, New York City, U.S                       jay Z                                             
+William Leonard Roberts II                         Clarksdale, Mississippi, U.S                       Rick Ross                                         
+Rodrick Wayne Moore Jr.                            Compton, California, U.S.                          Roddy Rich                                        
+Clifford Smith, Jr.                                Long Island, New York, U.S.                        Method Man                                        
+
+
+Error starting at line : 95 in command -
+CREATE user C##plsql IDENTIFIED BY plsql
+Error report -
+ORA-01031: insufficient privileges
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+Error starting at line : 95 in command -
+CREATE user C##plsql IDENTIFIED BY plsql
+Error report -
+ORA-01031: insufficient privileges
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+Error starting at line : 95 in command -
+CREATE user C##plsql IDENTIFIED BY plsql
+Error report -
+ORA-01031: insufficient privileges
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+Error starting at line : 95 in command -
+CREATE user C##plsql IDENT
+Error report -
+ORA-00922: missing or invalid option
+00922. 00000 -  "missing or invalid option"
+*Cause:    
+*Action:
+
+Error starting at line : 95 in command -
+CREATE user C##plsql IDENTIFIED BY plsql
+Error report -
+ORA-01031: insufficient privileges
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+Error starting at line : 95 in command -
+CREATE user C##plsql IDENTIFIED BY plsql
+Error report -
+ORA-01031: insufficient privileges
+01031. 00000 -  "insufficient privileges"
+*Cause:    An attempt was made to perform a database operation without
+           the necessary privileges.
+*Action:   Ask your database administrator or designated security
+           administrator to grant you the necessary privileges
+
+Commit complete.
+
