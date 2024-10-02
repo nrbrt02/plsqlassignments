@@ -23,3 +23,19 @@
     - Execute basic SQL commands (SELECT, INSERT, UPDATE, DELETE).
 
     - Perform joins and subqueries.
+
+## Assignment #2
+to be found in /assignment2 dir
+
+**Task 1: Create a New Pluggable Database (PDB)**
+
+Each student is required to create a PDB named plsql_class2024db.
+
+**Task 2: Create and Delete a Pluggable Database**
+
+You are required to create another Pluggable Database (PDB) based on the first two letters of your first name followed by _to_delete_pdb.
+
+***Task 3: Configure Oracle Enterprise Manager**
+Configure your Oracle Enterprise Manager and provide a screenshot of the dashboard after completing the above tasks.
+
+
